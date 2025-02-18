@@ -1,7 +1,12 @@
 import express from "express";
 import { users } from "../../index.js";
+import fs from "fs";
+import jwt from "jsonwebtoken";
 
 export const createUser = (req, res) => {
-    users.push(req.body);
-    res.send(req.body);
-  }
+  const rawUsers = fs.readFileSync("src/DB/users.json");
+  const users = JSON.parse(rawUsers);
+  users.push(req.body);
+  fs.writeFileSync("src/DB/users.json", JSON.stringify(users));
+  res.send(req.body);
+};

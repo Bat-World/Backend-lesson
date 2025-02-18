@@ -2,6 +2,7 @@
 import { userRouter } from "./routes/user-router.js";
 import { loginRouter } from "./routes/login-router.js";
 import express from "express";
+import fs from "fs";
 const app = express();
 const port = 3000;
 
