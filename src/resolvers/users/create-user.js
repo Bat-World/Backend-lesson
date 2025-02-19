@@ -1,5 +1,4 @@
 import express from "express";
-import { users } from "../../index.js";
 import fs from "fs";
 import jwt from "jsonwebtoken";
 

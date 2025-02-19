@@ -1,7 +1,6 @@
 import { users } from "../../../index.js";
 import jwt from "jsonwebtoken";
 
-
 const SECRET_KEY = "your_secret_key";
 
 export const createLogin = (req, res) => {
@@ -22,3 +21,4 @@ export const createLogin = (req, res) => {
     return res.status(401).json({ message: "Invalid login" });
   }
 };
+ 
