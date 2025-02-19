@@ -1,4 +1,7 @@
-export const  Authorization = (req, res, next) => {
+import jwt from "jsonwebtoken";
+const SECRET_KEY = "your_secret_key";
+
+export const Authorization = (req, res, next) => {
   var token = req.headers.authorization;
   if (!token) {
     return res.status(401).json({ message: "Invalid token" });
@@ -11,4 +14,4 @@ export const  Authorization = (req, res, next) => {
     req.user = user;
     next();
   });
-}
+};
