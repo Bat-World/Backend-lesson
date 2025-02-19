@@ -1,6 +1,5 @@
 import express from "express";
 import fs from "fs";
-import jwt from "jsonwebtoken";
 
 export const createUser = (req, res) => {
   const rawUsers = fs.readFileSync("src/DB/users.json");
