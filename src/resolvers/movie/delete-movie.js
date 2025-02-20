@@ -1,7 +1,10 @@
+import { log } from "console";
 import fs from "fs";
 
 export const deleteMovie = (req, res) => {
     const rawMovies = fs.readFileSync("src/DB/movies.json");
+    console.log(rawMovies);
+    
     const movies = JSON.parse(rawMovies);
     if (movies.length > 0) {
         const removedMovie = movies.pop();
