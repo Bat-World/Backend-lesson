@@ -8,9 +8,9 @@ export const createLogin = (req, res) => {
   const user = users.find((user) => user.username === username);
   if (user && user.password === password) {
     const token = jwt.sign(
-      { id: user.id, username: user.username }, // Payload: user id and username
-      SECRET_KEY, // Secret key to sign the token
-      { expiresIn: "1h" } // Token expires in 1 hour
+      { id: user.id, username: user.username }, 
+      SECRET_KEY, 
+      { expiresIn: "1h" }  
     );
 
     return res.json({
