@@ -13,7 +13,7 @@ export let users = [
 
 
 app.use(cors({
-  origin: 'http://localhost:3001' // allow the Next.js front-end to make requests
+  origin: 'http://localhost:3001'
 }));
 
 app.use(express.json());

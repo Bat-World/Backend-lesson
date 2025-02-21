@@ -1,1 +1,42 @@
-[{"id":1,"name":"John Doe","username":"johndoe","password":"password1"},{"id":2,"name":"Jane Smith","username":"janesmith","password":"password2"},{"id":5,"name":"added one","username":"add","password":"password3"},{},{}]
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "username": "johndoe",
+    "password": "password1"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "username": "janesmith",
+    "password": "password2"
+  },
+  {
+    "id": 5,
+    "name": "added one",
+    "username": "add",
+    "password": "password3"
+  },
+  {},
+  {},
+  {
+    "id": 6,
+    "username": "baterdenede",
+    "password": "$2b$10$pzjmv08/8lbpKYKOPvu0Rer4aSTUdYD4Qm1yfrbxSRSo8iJREr9ty"
+  },
+  {
+    "id": 7,
+    "username": "123",
+    "password": "$2b$10$NndKzeQRtAWzzn4aULJxIOUS2leG9pblglFudCCNt4pLGg5CEG0uC"
+  },
+  {
+    "id": 8,
+    "username": "baterdene",
+    "password": "$2b$10$hPIGmdaYfR4jnE3nI8KrCeKcg4V6bOTOGf12/wJtcSEhwJ1GdCzRO"
+  },
+  {
+    "id": 9,
+    "username": "newuser",
+    "password": "new"
+  }
+]
