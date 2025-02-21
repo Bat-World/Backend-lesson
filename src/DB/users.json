@@ -1,15 +1,1 @@
-[
-  {
-    "id": 1,
-    "name": "John Doe",
-    "username": "johndoe",
-    "password": "password1"
-  },
-  {
-    "id": 2,
-    "name": "Jane Smith",
-    "username": "janesmith",
-    "password": "password2"
-  },
-  { "id": 5, "name": "added one", "username": "add", "password": "password3" }
-]
+[{"id":1,"name":"John Doe","username":"johndoe","password":"password1"},{"id":2,"name":"Jane Smith","username":"janesmith","password":"password2"},{"id":5,"name":"added one","username":"add","password":"password3"},{},{}]

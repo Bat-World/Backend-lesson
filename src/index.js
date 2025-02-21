@@ -1,7 +1,7 @@
 import { userRouter } from "./routes/user-router.js";
 import {movieRouter} from "./routes/movie-router.js";
+import cors from "cors";
 import express from "express";
-import fs from "fs";
 
 const app = express();
 const port = 3000;
@@ -11,9 +11,12 @@ export let users = [
   { id: 2, name: "Jane Smith", username: "janesmith", password: "password2" },
 ];
 
+
+app.use(cors({
+  origin: 'http://localhost:3001' // allow the Next.js front-end to make requests
+}));
+
 app.use(express.json());
-
-
 
 app.use("/users", userRouter);
 app.use("/movies", movieRouter);

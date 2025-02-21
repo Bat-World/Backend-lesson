@@ -9,7 +9,7 @@ import { createLogin } from "../resolvers/users/login/create-login.js";
 
 export const userRouter = Router();
 
-userRouter.get("/", Authorization, getUser);
+userRouter.get("/", getUser);
 userRouter.put("/", Authorization, updateUser);
 userRouter.post("/", createUser);
 userRouter.delete("/", Authorization, deleteUser);

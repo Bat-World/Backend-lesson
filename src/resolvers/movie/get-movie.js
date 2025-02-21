@@ -18,11 +18,7 @@ export const getMoviesFromTMDB = (req, res) => {
     .catch((err) => console.error(err));
 };
  
-
-
 export const getAllMovies = (req, res) => {
-    const movies = fs.readFileSync("src/DB/movies.json", "utf8")
-    console.log(movies);
-    
+    const movies = JSON.parse(fs.readFileSync("src/DB/movies.json", "utf8"))    
     res.send({movies});
 }
