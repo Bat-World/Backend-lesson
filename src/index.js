@@ -1,7 +1,8 @@
 import { userRouter } from "./routes/user-router.js";
 import {movieRouter} from "./routes/movie-router.js";
-import cors from "cors";
 import express from "express";
+import cors from "cors";
+
 
 const app = express();
 const port = 3000;
