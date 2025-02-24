@@ -7,7 +7,6 @@ const SECRET_KEY = "your_secret_key";
 export const createLogin = (req, res) => {
   const { username, password } = req.body;
 
-
   const user = users.find((user) => user.username === username);
 
   if (user) {

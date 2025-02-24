@@ -1,10 +1,7 @@
 import fs from "fs";
 import bcrypt from "bcrypt";
 
-
 const USERS_FILE_PATH = "src/DB/users.json";
-
-
 const getUsersFromFile = () => {
   try {
     const rawData = fs.readFileSync(USERS_FILE_PATH, "utf8");
@@ -14,7 +11,6 @@ const getUsersFromFile = () => {
     return [];
   }
 };
-
 
 const saveUsersToFile = (users) => {
   try {
@@ -32,7 +28,6 @@ export const createUser = (req, res) => {
   }
 
   const users = getUsersFromFile();
-
 
   const existingUser = users.find((user) => user.username === username);
   if (existingUser) {

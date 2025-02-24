@@ -38,5 +38,10 @@
     "id": 9,
     "username": "newuser",
     "password": "new"
+  },
+  {
+    "id": 10,
+    "username": "paul",
+    "password": "21"
   }
 ]
